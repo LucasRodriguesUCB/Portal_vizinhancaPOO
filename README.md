@@ -20,7 +20,7 @@ Antes de executar o projeto, certifique-se de possuir:
 
 ```text
 Portal_vizinhancaPOO/
-├── src/ (Trabalho---N2---Poo-mainFinal)
+├── src/ (Trabalho---N2---Poo-main)
 ├── lib/
 │   └── mysql-connector-j-9.7.0.jar
 ├── database/
