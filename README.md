@@ -1,36 +1,114 @@
-Estrutura do Projeto
+# 🏘️ Portal da Vizinhança
+
+Sistema desenvolvido em Java com integração ao banco de dados MySQL para gerenciamento e interação entre moradores de uma comunidade.
+
+---
+
+# 📋 Requisitos
+
+Antes de executar o projeto, certifique-se de possuir:
+
+* Java JDK
+* NetBeans IDE
+* MySQL Server
+* MySQL Workbench (opcional)
+* Driver MySQL Connector/J
+
+---
+
+# 📁 Estrutura do Projeto
+
+```text
 Portal_vizinhancaPOO/
-├── src (Trabalho---N2---Poo-main)
+├── src/ (Trabalho---N2---Poo-mainFinal)
 ├── lib/
 │   └── mysql-connector-j-9.7.0.jar
 ├── database/
 │   └── portal_vizinhanca.sql
 ├── nbproject/
 ├── build.xml
-└── manifest.mf
+├── manifest.mf
+└── .gitignore
+```
 
-Configuração do Banco de Dados
-Abra o MySQL Workbench.
-Crie uma nova conexão com seu servidor MySQL.
-Abra o arquivo:
+---
+
+# 🗄️ Configuração do Banco de Dados
+
+## 1. Criar o Banco
+
+Abra o MySQL Workbench e execute o script:
+
+```text
 database/portal_vizinhanca.sql
+```
 
-Configuração da Conexão
-Na classe "conexão" em "util" faça:
+O script criará automaticamente o banco de dados e suas tabelas.
+
+## 2. Verificar a Conexão
+
+Na classe responsável pela conexão, configure:
+
+```java
 String url = "jdbc:mysql://localhost:3306/portal_vizinhanca";
 String usuario = "root";
-String senha = "sua senha do mySql";
+String senha = "SUA_SENHA";
+```
 
-Executando o Projeto
+Substitua os valores conforme sua instalação do MySQL.
+
+---
+
+# ⚙️ Configuração do Projeto
+
+## Adicionar o Driver JDBC
+
+Verifique se o arquivo abaixo está presente:
+
+```text
+lib/mysql-connector-j-9.7.0.jar
+```
+
+Caso necessário:
+
+1. Clique com o botão direito em **Libraries**.
+2. Selecione **Add JAR/Folder**.
+3. Escolha o arquivo `mysql-connector-j-9.7.0.jar`.
+
+---
+
+# ▶️ Como Executar
+
+## Passo 1
+
 Abra o projeto no NetBeans.
-Verifique se o arquivo mysql-connector-j-9.7.0.jar está adicionado nas bibliotecas do projeto.
-Compile o projeto.
-Execute a aplicação.
 
-Funcionalidades
-Cadastro de usuários
-Gerenciamento de informações da vizinhança
-Integração com banco de dados MySQL
-Autor
+## Passo 2
 
-Jessika Cardoso, Júlia de Almeda, Lucas Alves, Lucas Gabriel
+Certifique-se de que o banco de dados foi criado corretamente.
+
+## Passo 3
+
+Verifique se o driver MySQL está configurado.
+
+## Passo 4
+
+Compile e execute o projeto.
+
+---
+
+# ✨ Funcionalidades
+
+* Cadastro de usuários
+* Gerenciamento de informações da vizinhança
+* Integração com banco de dados MySQL
+* Interface gráfica desenvolvida em Java
+
+---
+
+# 👨‍💻 Autor
+
+**Jéssika Cardoso, Júlia de Almeida, Lucas Gabriel Vigerns, Lucas Alves Rodrigues**
+
+Projeto desenvolvido para a disciplina de Programação Orientada a Objetos.
+
